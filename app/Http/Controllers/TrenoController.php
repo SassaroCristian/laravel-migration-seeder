@@ -10,6 +10,6 @@ class TrenoController extends Controller
     public function index()
     {
         $treni = Treno::all();
-        return view('treni.index', ['treni' => $treni]);
+        return view('home', ['treni' => $treni]);
     }
 }
